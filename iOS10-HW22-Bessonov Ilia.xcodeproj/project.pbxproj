@@ -9,23 +9,25 @@
 /* Begin PBXBuildFile section */
 		FAAD0C282AB02F06009A1513 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAAD0C272AB02F06009A1513 /* AppDelegate.swift */; };
 		FAAD0C2A2AB02F06009A1513 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAAD0C292AB02F06009A1513 /* SceneDelegate.swift */; };
-		FAAD0C2C2AB02F06009A1513 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAAD0C2B2AB02F06009A1513 /* ViewController.swift */; };
 		FAAD0C2F2AB02F06009A1513 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAAD0C2D2AB02F06009A1513 /* Main.storyboard */; };
 		FAAD0C322AB02F06009A1513 /* iOS10_HW22_Bessonov_Ilia.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FAAD0C302AB02F06009A1513 /* iOS10_HW22_Bessonov_Ilia.xcdatamodeld */; };
 		FAAD0C342AB02F08009A1513 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAAD0C332AB02F08009A1513 /* Assets.xcassets */; };
 		FAAD0C372AB02F08009A1513 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAAD0C352AB02F08009A1513 /* LaunchScreen.storyboard */; };
+		FAAD0C402AB03571009A1513 /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAAD0C3F2AB03571009A1513 /* UIView+Extensions.swift */; };
+		FAAD0C492AB037F3009A1513 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAAD0C482AB037F3009A1513 /* ViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		FAAD0C242AB02F06009A1513 /* iOS10-HW22-Bessonov Ilia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS10-HW22-Bessonov Ilia.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAAD0C272AB02F06009A1513 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FAAD0C292AB02F06009A1513 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		FAAD0C2B2AB02F06009A1513 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		FAAD0C2E2AB02F06009A1513 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FAAD0C312AB02F06009A1513 /* iOS10_HW22_Bessonov_Ilia.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = iOS10_HW22_Bessonov_Ilia.xcdatamodel; sourceTree = "<group>"; };
 		FAAD0C332AB02F08009A1513 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FAAD0C362AB02F08009A1513 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FAAD0C382AB02F08009A1513 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FAAD0C3F2AB03571009A1513 /* UIView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
+		FAAD0C482AB037F3009A1513 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,16 +60,57 @@
 		FAAD0C262AB02F06009A1513 /* iOS10-HW22-Bessonov Ilia */ = {
 			isa = PBXGroup;
 			children = (
-				FAAD0C272AB02F06009A1513 /* AppDelegate.swift */,
-				FAAD0C292AB02F06009A1513 /* SceneDelegate.swift */,
-				FAAD0C2B2AB02F06009A1513 /* ViewController.swift */,
-				FAAD0C2D2AB02F06009A1513 /* Main.storyboard */,
-				FAAD0C332AB02F08009A1513 /* Assets.xcassets */,
-				FAAD0C352AB02F08009A1513 /* LaunchScreen.storyboard */,
-				FAAD0C382AB02F08009A1513 /* Info.plist */,
+				FAAD0C3E2AB03528009A1513 /* Extensions */,
+				FAAD0C442AB03650009A1513 /* Resources */,
+				FAAD0C412AB035C5009A1513 /* Sources */,
 				FAAD0C302AB02F06009A1513 /* iOS10_HW22_Bessonov_Ilia.xcdatamodeld */,
 			);
 			path = "iOS10-HW22-Bessonov Ilia";
+			sourceTree = "<group>";
+		};
+		FAAD0C3E2AB03528009A1513 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				FAAD0C3F2AB03571009A1513 /* UIView+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		FAAD0C412AB035C5009A1513 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				FAAD0C482AB037F3009A1513 /* ViewController.swift */,
+				FAAD0C432AB0361C009A1513 /* App */,
+				FAAD0C422AB03607009A1513 /* Storyboards */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		FAAD0C422AB03607009A1513 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				FAAD0C2D2AB02F06009A1513 /* Main.storyboard */,
+				FAAD0C352AB02F08009A1513 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		FAAD0C432AB0361C009A1513 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				FAAD0C272AB02F06009A1513 /* AppDelegate.swift */,
+				FAAD0C292AB02F06009A1513 /* SceneDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		FAAD0C442AB03650009A1513 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				FAAD0C382AB02F08009A1513 /* Info.plist */,
+				FAAD0C332AB02F08009A1513 /* Assets.xcassets */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,8 +184,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FAAD0C2C2AB02F06009A1513 /* ViewController.swift in Sources */,
+				FAAD0C492AB037F3009A1513 /* ViewController.swift in Sources */,
 				FAAD0C282AB02F06009A1513 /* AppDelegate.swift in Sources */,
+				FAAD0C402AB03571009A1513 /* UIView+Extensions.swift in Sources */,
 				FAAD0C2A2AB02F06009A1513 /* SceneDelegate.swift in Sources */,
 				FAAD0C322AB02F06009A1513 /* iOS10_HW22_Bessonov_Ilia.xcdatamodeld in Sources */,
 			);
@@ -293,7 +337,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 5C9S7JT7L3;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "iOS10-HW22-Bessonov Ilia/Info.plist";
+				INFOPLIST_FILE = "iOS10-HW22-Bessonov Ilia/Resources/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -321,7 +365,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 5C9S7JT7L3;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "iOS10-HW22-Bessonov Ilia/Info.plist";
+				INFOPLIST_FILE = "iOS10-HW22-Bessonov Ilia/Resources/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
