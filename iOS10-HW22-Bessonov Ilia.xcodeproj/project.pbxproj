@@ -14,7 +14,15 @@
 		FAAD0C342AB02F08009A1513 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAAD0C332AB02F08009A1513 /* Assets.xcassets */; };
 		FAAD0C372AB02F08009A1513 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAAD0C352AB02F08009A1513 /* LaunchScreen.storyboard */; };
 		FAAD0C402AB03571009A1513 /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAAD0C3F2AB03571009A1513 /* UIView+Extensions.swift */; };
-		FAAD0C492AB037F3009A1513 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAAD0C482AB037F3009A1513 /* ViewController.swift */; };
+		FAAD0C4C2AB08284009A1513 /* UsersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAAD0C4B2AB08284009A1513 /* UsersViewController.swift */; };
+		FAAD0CB02AB5CD06009A1513 /* UsersDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAAD0CAF2AB5CD06009A1513 /* UsersDetailsViewController.swift */; };
+		FAAD0CB32AB6287C009A1513 /* UserDetailsWithButtonCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAAD0CB22AB6287C009A1513 /* UserDetailsWithButtonCell.swift */; };
+		FAAD0CB62AB63F2B009A1513 /* DetailsItems.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAAD0CB52AB63F2B009A1513 /* DetailsItems.swift */; };
+		FAAD0CB92AB6FC22009A1513 /* Person+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAAD0CB72AB6FC22009A1513 /* Person+CoreDataClass.swift */; };
+		FAAD0CBA2AB6FC22009A1513 /* Person+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAAD0CB82AB6FC22009A1513 /* Person+CoreDataProperties.swift */; };
+		FAAD0CBC2AB8653E009A1513 /* SimpleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAAD0CBB2AB8653E009A1513 /* SimpleCell.swift */; };
+		FAAD0CC02AB9C87A009A1513 /* UsersPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAAD0CBF2AB9C87A009A1513 /* UsersPresenter.swift */; };
+		FADF6E432AC06C7800764F06 /* UserViewProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADF6E422AC06C7800764F06 /* UserViewProtocols.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,7 +35,15 @@
 		FAAD0C362AB02F08009A1513 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FAAD0C382AB02F08009A1513 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FAAD0C3F2AB03571009A1513 /* UIView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
-		FAAD0C482AB037F3009A1513 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FAAD0C4B2AB08284009A1513 /* UsersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersViewController.swift; sourceTree = "<group>"; };
+		FAAD0CAF2AB5CD06009A1513 /* UsersDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersDetailsViewController.swift; sourceTree = "<group>"; };
+		FAAD0CB22AB6287C009A1513 /* UserDetailsWithButtonCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailsWithButtonCell.swift; sourceTree = "<group>"; };
+		FAAD0CB52AB63F2B009A1513 /* DetailsItems.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsItems.swift; sourceTree = "<group>"; };
+		FAAD0CB72AB6FC22009A1513 /* Person+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Person+CoreDataClass.swift"; sourceTree = "<group>"; };
+		FAAD0CB82AB6FC22009A1513 /* Person+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Person+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		FAAD0CBB2AB8653E009A1513 /* SimpleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleCell.swift; sourceTree = "<group>"; };
+		FAAD0CBF2AB9C87A009A1513 /* UsersPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersPresenter.swift; sourceTree = "<group>"; };
+		FADF6E422AC06C7800764F06 /* UserViewProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewProtocols.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +76,7 @@
 		FAAD0C262AB02F06009A1513 /* iOS10-HW22-Bessonov Ilia */ = {
 			isa = PBXGroup;
 			children = (
+				FAAD0C512AB1A44C009A1513 /* Model */,
 				FAAD0C3E2AB03528009A1513 /* Extensions */,
 				FAAD0C442AB03650009A1513 /* Resources */,
 				FAAD0C412AB035C5009A1513 /* Sources */,
@@ -79,7 +96,7 @@
 		FAAD0C412AB035C5009A1513 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				FAAD0C482AB037F3009A1513 /* ViewController.swift */,
+				FAAD0C4A2AB081FA009A1513 /* Users */,
 				FAAD0C432AB0361C009A1513 /* App */,
 				FAAD0C422AB03607009A1513 /* Storyboards */,
 			);
@@ -111,6 +128,61 @@
 				FAAD0C332AB02F08009A1513 /* Assets.xcassets */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		FAAD0C4A2AB081FA009A1513 /* Users */ = {
+			isa = PBXGroup;
+			children = (
+				FADF6E412AC06C4100764F06 /* UserViewProtocols */,
+				FAAD0CAE2AB5CC34009A1513 /* UsersDetails */,
+				FAAD0C4B2AB08284009A1513 /* UsersViewController.swift */,
+				FAAD0CBF2AB9C87A009A1513 /* UsersPresenter.swift */,
+			);
+			path = Users;
+			sourceTree = "<group>";
+		};
+		FAAD0C512AB1A44C009A1513 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FAAD0CB72AB6FC22009A1513 /* Person+CoreDataClass.swift */,
+				FAAD0CB82AB6FC22009A1513 /* Person+CoreDataProperties.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		FAAD0CAE2AB5CC34009A1513 /* UsersDetails */ = {
+			isa = PBXGroup;
+			children = (
+				FAAD0CB42AB63E86009A1513 /* Items */,
+				FAAD0CB12AB6273B009A1513 /* Cells */,
+				FAAD0CAF2AB5CD06009A1513 /* UsersDetailsViewController.swift */,
+			);
+			path = UsersDetails;
+			sourceTree = "<group>";
+		};
+		FAAD0CB12AB6273B009A1513 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				FAAD0CBB2AB8653E009A1513 /* SimpleCell.swift */,
+				FAAD0CB22AB6287C009A1513 /* UserDetailsWithButtonCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		FAAD0CB42AB63E86009A1513 /* Items */ = {
+			isa = PBXGroup;
+			children = (
+				FAAD0CB52AB63F2B009A1513 /* DetailsItems.swift */,
+			);
+			path = Items;
+			sourceTree = "<group>";
+		};
+		FADF6E412AC06C4100764F06 /* UserViewProtocols */ = {
+			isa = PBXGroup;
+			children = (
+				FADF6E422AC06C7800764F06 /* UserViewProtocols.swift */,
+			);
+			path = UserViewProtocols;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -184,11 +256,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FAAD0C492AB037F3009A1513 /* ViewController.swift in Sources */,
+				FAAD0C4C2AB08284009A1513 /* UsersViewController.swift in Sources */,
 				FAAD0C282AB02F06009A1513 /* AppDelegate.swift in Sources */,
+				FAAD0CB02AB5CD06009A1513 /* UsersDetailsViewController.swift in Sources */,
+				FAAD0CBC2AB8653E009A1513 /* SimpleCell.swift in Sources */,
 				FAAD0C402AB03571009A1513 /* UIView+Extensions.swift in Sources */,
+				FAAD0CC02AB9C87A009A1513 /* UsersPresenter.swift in Sources */,
+				FADF6E432AC06C7800764F06 /* UserViewProtocols.swift in Sources */,
 				FAAD0C2A2AB02F06009A1513 /* SceneDelegate.swift in Sources */,
+				FAAD0CB92AB6FC22009A1513 /* Person+CoreDataClass.swift in Sources */,
+				FAAD0CBA2AB6FC22009A1513 /* Person+CoreDataProperties.swift in Sources */,
+				FAAD0CB32AB6287C009A1513 /* UserDetailsWithButtonCell.swift in Sources */,
 				FAAD0C322AB02F06009A1513 /* iOS10_HW22_Bessonov_Ilia.xcdatamodeld in Sources */,
+				FAAD0CB62AB63F2B009A1513 /* DetailsItems.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
